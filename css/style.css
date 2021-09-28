@@ -35,6 +35,28 @@ h2 {
   line-height: 1.1;
 }
 
+.controller {
+  list-style: none;
+  padding: 0;
+}
+.controller li {
+  color: #E85226;
+  padding: 1px 1em;
+  margin: 1em 0;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 0.5em;
+}
+.controller li.active {
+  background-color: rgba(232, 82, 38, 0.1);
+}
+.controller li h5 {
+  font-size: 1em;
+}
+.controller li h5 svg {
+  width: 30px;
+}
+
 .menu-mobile {
   background-color: #F2F2F2;
   border-bottom: solid 1px rgba(0, 0, 0, 0.05);
@@ -129,6 +151,7 @@ h2 {
   font-size: 36px;
   line-height: 1.1;
   margin: 0;
+  color: white;
 }
 .talents .cover p {
   line-height: 1.4;
@@ -194,27 +217,6 @@ h2 {
 #platform .selection p {
   line-height: 1.4;
 }
-#platform .selection ul {
-  list-style: none;
-  padding: 0;
-}
-#platform .selection ul li {
-  color: #E85226;
-  padding: 1px 1em;
-  margin: 1em 0;
-  text-transform: uppercase;
-  line-height: 1;
-  border-radius: 0.5em;
-}
-#platform .selection ul li.active {
-  background-color: rgba(232, 82, 38, 0.1);
-}
-#platform .selection ul li h5 {
-  font-size: 1em;
-}
-#platform .selection ul li h5 svg {
-  width: 30px;
-}
 #platform .images img {
   width: 100%;
   display: none;
@@ -267,7 +269,7 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   font-size: 1.2em;
-  margin-bottom: 0.5em;
+  margin: 0 0.75em 0.75em 0;
   width: 240px;
 }
 #app .download-ctas .button svg {
@@ -299,4 +301,81 @@ h2 {
   text-transform: uppercase;
   margin: 0;
   color: #E85226;
+}
+
+#relevant .container {
+  margin: 1em;
+}
+#relevant .container .production {
+  background: linear-gradient(0deg, rgba(0, 0, 19, 0.4), rgba(0, 0, 19, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(232, 82, 38, 0.5) 72.92%, #E85226 100%), url(../img/movie-bg.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 1em;
+  height: 500px;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#relevant .container .production h1, #relevant .container .production h2, #relevant .container .production h3, #relevant .container .production h4, #relevant .container .production h5, #relevant .container .production h6, #relevant .container .production p {
+  margin: 0;
+}
+#relevant .container .production .space {
+  height: 16px;
+}
+#relevant .container .production h3 {
+  font-size: 20px;
+}
+#relevant .container .production .icon {
+  color: #E85226;
+  width: 1em;
+  margin-right: 0.5em;
+}
+#relevant .container .production .special {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+#relevant .container .production .description {
+  line-height: 1.4;
+}
+#relevant .container .production .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+#relevant .container .production .tags .tag {
+  padding: 0.3em 0.6em;
+  border-radius: 999px;
+  background-color: #E85226;
+  margin: 0.3em;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+}
+
+footer .container {
+  padding: 1em;
+}
+footer .container .border {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2em 0;
+}
+footer .container .logo {
+  margin-bottom: 2em;
+}
+footer .container a {
+  text-decoration: none;
+}
+footer .container .getintouch {
+  margin-top: 2em;
+}
+footer .container .getintouch .social a {
+  margin-right: 1em;
+}
+footer .container .disclaimer {
+  line-height: 1.4;
+  font-size: 0.8em;
 }
