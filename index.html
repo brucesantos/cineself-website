@@ -18,44 +18,42 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="container menu-desktop" style="display: none;">
-        <a href="http://cineself.com"><img class="logo" src="assets/img/cineself.svg" alt="logo-cineself"></a>
+      <div class="menu-desktop">
+        <a href="http://cineself.com"><img class="logo" src="img/cs-logo.svg" alt="logo-cineself"></a>
         <ul class="menu">
-          <li><a href="#">Section</a></li>
-          <li><a href="#">Section</a></li>
-          <li><a href="#">Section</a></li>
-          <li><a href="#">Section</a></li>
-          <li><a href="#">Section</a></li>
-          <li><a href="#">Section</a></li>
+          <li><a href="#cover">Get Started</a></li>
+          <li><a href="#">Talents</a></li>
+          <li><a href="#">Platform</a></li>
+          <li><a href="#">App</a></li>
+          <li><a href="#">Relevant</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <ul class="login">
-          <li><a href="#">Log In</a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a class="button transparent" href="#">Log In</a></li>
+          <li><a class="button gradient-primary" href="#">Sign up</a></li>
         </ul>
       </div>
-      <div class="container">
-        <div class="menu-mobile">
-          <a href="http://cineself.com"><img class="logo" src="img/cs-icon.svg" alt="logo"></a>
-          <div class="sidebar" style="display: none;">
-            <ul class="menu">
-              <li><a href="#">Section</a></li>
-              <li><a href="#">Section</a></li>
-              <li><a href="#">Section</a></li>
-              <li><a href="#">Section</a></li>
-              <li><a href="#">Section</a></li>
-              <li><a href="#">Section</a></li>
-            </ul>
-          </div>
-          <div class="right-side">
-            <ul class="login">
-              <li><a href="#">Log In</a></li>
-              <li><a href="#" class="button gradient-primary">Sign up</a></li>
-            </ul>
-            <div class="toggle-offcanvas">
-              <a href="">
-                <i class="far fa-bars"></i>
-              </a>
-            </div>
+      <div class="menu-mobile">
+        <a href="http://cineself.com"><img class="logo" src="img/cs-icon.svg" alt="logo"></a>
+        <div class="offcanvas" style="display: none;">
+          <ul class="menu">
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+            <li><a href="#">Section</a></li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <ul class="login">
+            <li><a href="#">Log In</a></li>
+            <li><a href="#" class="button gradient-primary">Sign up</a></li>
+          </ul>
+          <div class="toggle-offcanvas">
+            <a href="">
+              <i class="far fa-bars"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -64,18 +62,21 @@
   <main>
     <section id="cover">
       <div class="content">
-        <h4> <i class="far fa-star"></i> roles available</h4>
-        <h1>Get ready to be the next TV star!</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <strong>has been</strong> the
-          industry's standard.</p>
-        <br>
-        <div class="btn">
-          <a href="#subscribe" class="button gradient-secondary">get started</a>
+        <div class="cta">
+          <h4> <i class="far fa-star"></i> roles available</h4>
+          <h1>Get ready to be the next TV star!</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <strong>has been</strong> the
+            industry's standard.</p>
+          <br>
+          <div class="btn">
+            <a href="#subscribe" class="button gradient-secondary">get started</a>
+          </div>
         </div>
+        <img class="hero-img" src="img/cover-hero.png" alt="several images of tv and movie stars slightly shifted to the right">
       </div>
       <img class="hero-img-mob" src="img/cover-hero-mob.png" alt="several images of tv and movie stars slightly shifted to the right">
       <div class="companies">
-        <p>Company that people cast for</p>
+        <p>Used by</p>
         <div class="logos">
           <img src="img/usedby/netflix.svg" alt="netflix logo">
           <img src="img/usedby/hbo.svg" alt="hbo logo">
@@ -88,10 +89,12 @@
     <section class="talents">
       <div class="container">
         <div class="cover">
-          <h2>You are a talent and looking for a new adventure?</h2>
-          <p>Please <a href="">sign up</a> and join our palette of amazing people.</p>
-          <p class="special">+999</p>
-          <h3>Amazing people</h3>
+          <div class="content">
+            <h2>You are a talent and looking for a new adventure?</h2>
+            <p>Please <a href="">sign up</a> and join our palette of amazing people.</p>
+            <p class="special">+999</p>
+            <h3>Amazing people</h3>  
+          </div>
         </div>
         <div class="numbers">
           <ul>
@@ -318,7 +321,6 @@
           dolores eos qui ratione voluptatem sequi nesciunt.</p>
           <p>2021 © CINESELF — All rights reserved</p>
       </div>
-        
     </div>
   </footer>
 

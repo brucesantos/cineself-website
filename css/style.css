@@ -28,6 +28,10 @@ body a {
 .button.gradient-secondary {
   background: linear-gradient(12deg, #FC0434 0%, #FF8805 100%);
 }
+.button.transparent {
+  background: none;
+  color: #049788;
+}
 
 h2 {
   color: #E85226;
@@ -98,6 +102,49 @@ h2 {
 .menu-mobile .toggle-offcanvas.active a {
   color: red;
 }
+@media (min-width: 600px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+.menu-desktop {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: #F2F2F2;
+}
+.menu-desktop .menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.menu-desktop .menu li {
+  margin-right: 1em;
+}
+.menu-desktop .menu li a {
+  text-decoration: none;
+}
+.menu-desktop .login {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.menu-desktop .login .transparent {
+  margin-right: 1em;
+}
+@media (max-width: 599px) {
+  .menu-desktop {
+    display: none;
+  }
+}
 
 #cover {
   margin-top: 6em;
@@ -120,6 +167,22 @@ h2 {
 #cover .content p {
   line-height: 1.4;
 }
+@media (min-width: 600px) {
+  #cover .content {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  #cover .content .cta {
+    padding: 3em 1em 0 5em;
+  }
+  #cover .content .hero-img {
+    width: 50%;
+  }
+  #cover .hero-img-mob {
+    display: none;
+  }
+}
 
 .hero-img-mob {
   width: 100%;
@@ -140,12 +203,28 @@ h2 {
   margin: 1em;
 }
 
+@media (max-width: 599px) {
+  .hero-img {
+    display: none;
+  }
+}
 .talents .cover {
   background-image: url("../img/bg-talent.png");
   background-size: 100%;
   background-position: center;
   padding: 5em 1em;
   color: white;
+}
+@media (min-width: 600px) {
+  .talents .cover {
+    display: flex;
+    justify-content: center;
+    background-size: 33%;
+  }
+  .talents .cover .content {
+    width: 500px;
+    text-align: center;
+  }
 }
 .talents .cover h2 {
   font-size: 36px;
@@ -201,6 +280,16 @@ h2 {
   text-transform: uppercase;
   font-size: 18px;
 }
+@media (min-width: 600px) {
+  .talents .numbers ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+  .talents .numbers ul li {
+    width: 23%;
+  }
+}
 
 #platform {
   margin-bottom: 5em;
@@ -224,6 +313,20 @@ h2 {
 #platform .images img.active {
   display: initial;
 }
+@media (min-width: 600px) {
+  #platform {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5em 0;
+  }
+  #platform .selection {
+    width: 500px;
+  }
+  #platform .images {
+    width: 50%;
+  }
+}
 
 #features .feature01 {
   margin: 1em;
@@ -244,6 +347,20 @@ h2 {
 #features .feature01 .content p {
   line-height: 1.4;
   color: white;
+}
+@media (min-width: 600px) {
+  #features .feature01 {
+    display: flex;
+    width: 800px;
+    margin: auto;
+  }
+  #features .feature01 img {
+    width: 50%;
+    border-radius: 1em 0 0 1em;
+  }
+  #features .feature01 .content {
+    padding: 2em;
+  }
 }
 
 #app {
@@ -279,6 +396,19 @@ h2 {
   font-size: 0.6em;
   text-transform: uppercase;
 }
+@media (min-width: 600px) {
+  #app {
+    display: flex;
+    margin: 12em 0;
+  }
+  #app img {
+    width: 50%;
+  }
+  #app .container {
+    width: 600px;
+    margin-right: 6em;
+  }
+}
 
 #whatis h2 {
   margin: 1rem;
@@ -301,6 +431,16 @@ h2 {
   text-transform: uppercase;
   margin: 0;
   color: #E85226;
+}
+@media (min-width: 600px) {
+  #whatis {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  #whatis .content {
+    display: flex;
+  }
 }
 
 #relevant .container {
@@ -355,13 +495,40 @@ h2 {
   font-size: 0.9em;
   letter-spacing: 0.1em;
 }
+@media (min-width: 600px) {
+  #relevant {
+    margin: 6em 0;
+  }
+  #relevant .container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+  }
+  #relevant .container .production {
+    width: 50%;
+    margin-right: 2em;
+  }
+}
 
 footer .container {
   padding: 1em;
 }
+@media (min-width: 600px) {
+  footer .container {
+    width: 900px;
+    margin: auto;
+  }
+}
 footer .container .border {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2em 0;
+}
+@media (min-width: 600px) {
+  footer .container .border {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 footer .container .logo {
   margin-bottom: 2em;
