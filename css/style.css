@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -222,7 +226,7 @@ h2 {
     background-size: 33%;
   }
   .talents .cover .content {
-    width: 500px;
+    width: 540px;
     text-align: center;
   }
 }
@@ -328,6 +332,9 @@ h2 {
   }
 }
 
+#features {
+  margin-bottom: 6em;
+}
 #features .feature01 {
   margin: 1em;
   background-color: #E85226;
@@ -447,7 +454,6 @@ h2 {
   margin: 1em;
 }
 #relevant .container .production {
-  background: linear-gradient(0deg, rgba(0, 0, 19, 0.4), rgba(0, 0, 19, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(232, 82, 38, 0.5) 72.92%, #E85226 100%), url(../img/movie-bg.png);
   background-size: cover;
   background-position: center center;
   border-radius: 1em;
@@ -508,6 +514,22 @@ h2 {
     width: 50%;
     margin-right: 2em;
   }
+}
+
+#production01 {
+  background: linear-gradient(0deg, rgba(0, 0, 19, 0.4), rgba(0, 0, 19, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(232, 82, 38, 0.5) 72.92%, #E85226 100%), url(../img/movie-bg.png);
+}
+
+#production02 {
+  background: linear-gradient(0deg, rgba(0, 0, 19, 0.4), rgba(0, 0, 19, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(232, 82, 38, 0.5) 72.92%, #E85226 100%), url(https://upload.wikimedia.org/wikipedia/pt/thumb/8/8f/Fast_and_Furious_Poster.jpg/250px-Fast_and_Furious_Poster.jpg);
+}
+
+#production03 {
+  background: linear-gradient(0deg, rgba(0, 0, 19, 0.4), rgba(0, 0, 19, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(232, 82, 38, 0.5) 72.92%, #E85226 100%), url(https://br.web.img2.acsta.net/pictures/18/04/03/00/45/3390434.png);
+}
+
+#production04 {
+  background: linear-gradient(0deg, rgba(0, 0, 19, 0.4), rgba(0, 0, 19, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(232, 82, 38, 0.5) 72.92%, #E85226 100%), url(https://http2.mlstatic.com/D_NQ_NP_881121-MLB20723960210_052016-W.jpg);
 }
 
 footer .container {
