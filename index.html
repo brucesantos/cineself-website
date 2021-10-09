@@ -17,47 +17,28 @@
 
 <body>
   <header>
-    <nav class="navbar">
-      <div class="menu-desktop">
-        <a href="http://cineself.com"><img class="logo" src="img/cs-logo.svg" alt="logo-cineself"></a>
-        <ul class="menu">
-          <li><a href="#cover">Get Started</a></li>
-          <li><a href="#app">App</a></li>
-          <li><a href="#platform">Platform</a></li>
-          <li><a href="#whatis">Made for</a></li>
-          <li><a href="#relevant">Relevant</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="login">
-          <li><a class="button transparent" href="#">Log In</a></li>
-          <li><a class="button gradient-primary" href="#">Sign up</a></li>
-        </ul>
+    <div class="header-content">
+      <div class="logo">
+        <a href="http://cineself.com">
+          <img class="logo" src="img/cs-logo.svg" alt="logo-cineself">
+        </a>
       </div>
-      <div class="menu-mobile">
-        <a href="http://cineself.com"><img class="logo" src="img/cs-icon.svg" alt="logo"></a>
-        <div class="offcanvas" style="display: none;">
-          <ul class="menu">
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-            <li><a href="#">Section</a></li>
-          </ul>
-        </div>
-        <div class="right-side">
-          <ul class="login">
-            <li><a href="#">Log In</a></li>
-            <li><a href="#" class="button gradient-primary">Sign up</a></li>
-          </ul>
-          <div class="toggle-offcanvas">
-            <a href="">
-              <i class="far fa-bars"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+      <ul class="menu">
+        <li><a href="#cover">Get Started</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#whatis">Made for</a></li>
+        <li><a href="#relevant">Relevant</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="login">
+        <li><a class="button transparent" href="#">Log In</a></li>
+        <li><a class="button gradient-primary" href="#">Sign up</a></li>
+      </ul>
+      <a id="toggle-mob-active">
+        <i class="far fa-bars"></i>
+      </a>
+    </div>
   </header>
   <main>
     <section id="cover">
@@ -392,11 +373,14 @@
   <!-- SCRIPTS -->
   <script>
     $(document).ready(function() {
-      $(".toggle-offcanvas").on("click", function() {
-        $(this).toggleClass('active');
+      $("#toggle-mob-active").on("click", function() {
         event.preventDefault();
-        console.log('faaaack');
+        $('.header-content').toggleClass('mob-active');
       });
+      $(".menu li a").on("click", function() {
+        $('.header-content').toggleClass('mob-active');
+      });
+      
 
       //#PLATFORM TABS
       //https://stackoverflow.com/questions/11645081/how-to-build-simple-tabs-with-jquery
